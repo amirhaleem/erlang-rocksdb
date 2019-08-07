@@ -117,13 +117,13 @@ endif()
 
 option(WITH_BUNDLE_SNAPPY "Use bundle snappy" OFF)
 
-if(WITH_BUNDLE_SNAPPY AND NOT WITH_SNAPPY)
+# if(WITH_BUNDLE_SNAPPY AND NOT WITH_SNAPPY)
     include(build-snappy)
-endif()
+# endif()
 
-if(WITH_SNAPPY)
-    find_package(Snappy REQUIRED)
-endif()
+# if(WITH_SNAPPY)
+#    find_package(Snappy REQUIRED)
+# endif()
 
 if(WITH_ZSTD)
   find_package(Zstd REQUIRED)
